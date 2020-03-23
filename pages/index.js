@@ -1,36 +1,24 @@
-import Head from 'next/head';
 import '../styles/main.scss';
-import Content from "../compontents/Content";
-import Row from "../compontents/Row";
-import Container from "../compontents/Container";
-import LegendItem from "../compontents/LegendItem";
-import Places from "../compontents/Places";
-import Column from "../compontents/Column";
-import Legend from "../compontents/Legend";
+import Content from "../components/Content";
+import Row from "../components/Row";
+import Container from "../components/Container";
+import Places from "../components/Places";
+import Column from "../components/Column";
+import Legend from "../components/Legend";
+import Layout from "../components/Layout";
 
 const Home = () => (
   <div>
-      <Head>
-          <title>GP Foods</title>
-          <link rel="icon" href="/favicon.ico" />
-          <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap" rel="stylesheet" />
-      </Head>
 
-      <header>
-          <div className="container">
-              <h1>Grande Prairie Foods</h1>
-          </div>
-      </header>
-
-      <main>
+      <Layout>
           <Content>
               <Container>
                   <Row>
-                    <Column md={6}>
-                        <h4>What is GP Foods?</h4>
-                        <p>In response to COVID-19, I thought having a website with all the places in GP still delivering food / pickup was a good idea.</p>
-                        <Legend/>
-                    </Column>
+                      <Column md={6}>
+                          <h4>What is GP Foods?</h4>
+                          <p>In response to COVID-19, I thought having a website with all the places in GP still delivering food / pickup was a good idea.</p>
+                          <Legend/>
+                      </Column>
                       <Column md={6}>
                           <Places/>
                       </Column>
@@ -38,8 +26,7 @@ const Home = () => (
 
               </Container>
           </Content>
-
-      </main>
+      </Layout>
 
   </div>
 );
