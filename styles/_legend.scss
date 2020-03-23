@@ -1,0 +1,43 @@
+.legend {
+
+    .legend-toggle {
+
+    }
+
+    .legend-body {
+
+        visibility: hidden;
+        opacity: 0;
+        max-height:0;
+        transition: 0.4s;
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            max-height:1200px;
+        }
+
+    }
+
+}
+
+.legend-item__box {
+    display: inline-block;
+    border-radius:50%;
+    height:16px;
+    width:16px;
+    background:$primary;
+    margin-right:10px;
+    position:relative;
+    top:4px;
+
+    &.info {
+        background:$info;
+    }
+    &.success {
+        background:$success;
+    }
+    &.warning {
+        background:$warning;
+    }
+}
