@@ -1,4 +1,11 @@
 const withSass = require('@zeit/next-sass');
 module.exports = withSass({
-    /* config options here */
+    webpack(config, options) {
+        config.node = {
+            fs: 'empty',
+            net: 'empty',
+            tls: 'empty'
+        }
+        return config
+    }
 });
