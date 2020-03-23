@@ -17,6 +17,7 @@ const Home = () => (
                       <Column md={6}>
                           <h4>What is GP Foods?</h4>
                           <p>In response to COVID-19, I thought having a website with all the places in GP still delivering food / pickup was a good idea.</p>
+                          <p>Tap on a restaurant to call them.</p>
                           <Legend/>
                       </Column>
                       <Column md={6}>

@@ -3,9 +3,10 @@ import LegendItem from "./LegendItem";
 const Legend = (props) => (
     <div>
         <LegendItem status={"danger"}>Closed</LegendItem>
-        <LegendItem status={"warning"}>Delivery</LegendItem>
-        <LegendItem status={"success"}>Pickup</LegendItem>
-        <LegendItem status={"info"}>Curbside Pickup</LegendItem>
+        <LegendItem status={"primary"}>Delivery / Pickup / Curbside</LegendItem>
+        <LegendItem status={"warning"}>Delivery Only</LegendItem>
+        <LegendItem status={"success"}>Pickup Only</LegendItem>
+        <LegendItem status={"info"}>Curbside Pickup Only</LegendItem>
     </div>
 );
 

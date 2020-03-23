@@ -4,6 +4,7 @@ const Header = () => (
     <div>
         <Head>
             <title>GP Foods</title>
+            <meta name="description" content="Grande Prairie Foods - What is still open during COVID-19?" />
             <link rel="icon" href="/favicon.ico" />
             <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap" rel="stylesheet" />
 

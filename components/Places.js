@@ -19,7 +19,6 @@ class Places extends Component {
                     this.setState(prevState => ({
                         data: [...prevState.data, googleData[i]]
                     }));
-                    console.log(this.state.data);
                 }
             },
             simpleSheet: true
