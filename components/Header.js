@@ -1,4 +1,6 @@
 import Head from "next/head";
+import MenuButton from "./MenuButton";
+import Link from "next/link";
 
 const Header = () => (
     <div>
@@ -22,7 +24,8 @@ const Header = () => (
 
         <header>
             <div className="container">
-                <h1>Grande Prairie Foods</h1>
+                <MenuButton/>
+                <h1><Link href={'/'}><a>Grande Prairie Foods</a></Link></h1>
             </div>
         </header>
     </div>
